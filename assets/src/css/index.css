@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif, arial;
+    color: #fff;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(#4b0082, #000);
+}
+
+.calculator-container{
+    max-width: 350px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 20px;
+    background: #11111181;
+}
+
+.calculator-box{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-collapse: collapse;
+}
+.calculator-box td, .calculator-box tr{
+    height: 100%;
+    padding: 4px;
+}
+.calculator-box button{
+    font-size: 30px;
+    width: 100%;
+    background: #444444;
+    color: white;
+    padding: 20px 25px;
+    height: 100%;
+}
+
+.calculator-box .string{
+    background: #444444;
+    color: lightgreen;
+}
+#soma .string{
+    height: auto;
+    padding: calc(100% - 7px) 0;
+}
+#response{ 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: end;
+    padding: 0 15px;
+    margin: 5px;
+    background: #000;
+}
